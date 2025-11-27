@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TripAdvisor | Explore the World</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <img src="./images/logoimg.svg" alt="Logoimage">
+
+        <!-- Desktop Navigation -->
+        <div class="navbar__links">
+            <a href="#">Discover</a>
+            <a href="#">Trips</a>
+            <a href="#">Review</a>
+            <a href="#">More</a>
+        </div>
+
+        <!-- Right Icons -->
+        <div class="navbar__icons">
+            <div class="navbar__lang">
+                <i class="fa-solid fa-globe"></i>
+                <p>| INR</p>
+            </div>
+            <button class="navbar__button">Sign in</button>
+        </div>
+
+        <!-- MOBILE HAMBURGER MENU (CSS-ONLY) -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- SIDE MENU -->
+        <nav class="side-menu">
+            <a href="#">Discover</a>
+            <a href="#">Trips</a>
+            <a href="#">Review</a>
+            <a href="#">More</a>
+            <hr>
+            <a href="#">Sign in</a>
+            <a href="#">Language & Currency</a>
+        </nav>
+    </header>
+
+
+    <!-- ✅ Search Section -->
+    <section class="search">
+        <h1>Where to?</h1>
+
+        <div class="search__links">
+
+            <div class="search__item ">
+                <i class="fa-solid fa-house"></i>
+                <p>Search all</p>
+            </div>
+
+            <div class="search__item">
+                <i class="fa-solid fa-hotel"></i>
+                <p>Hotels</p>
+            </div>
+
+            <div class="search__item">
+                <i class="fa-solid fa-camera"></i>
+                <p>Things to do</p>
+            </div>
+
+            <div class="search__item">
+                <i class="fa-solid fa-bowl-food"></i>
+                <p>Restaurants</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="search__box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Places to go, things to do, hotels...">
+        <button>Search</button>
+    </div>
+    </section>
+
+    <!-- ✅ Hero Sale Banner -->
+    <section class="hero">
+        <img src="./images/bg.img" alt="Travel Banner">
+
+        <div class="hero__offer">
+            <h2>Book traveller-backed things to do</h2>
+            <p>Browse 400,000+ experiences and book with us.</p>
+        </div>
+    </section>
+
+    <!-- ✅ Category Section -->
+    <section class="categories">
+        <div class="section-title">
+            <h2>Find things to do by interest</h2>
+            <p>Whatever you're into, we've got it</p>
+        </div>
+
+        <div class="category__list">
+            <div class="category-card">
+                <img src="./images/culture.img">
+                <p>Culture</p>
+            </div>
+
+            <div class="category-card">
+                <img src="./images/food.img">
+                <p>Food</p>
+            </div>
+
+            <div class="category-card">
+                <img src="./outdoor.img">
+                <p>Outdoor</p>
+            </div>
+
+            <div class="category-card">
+                <img src="./images/water.img">
+                <p>Peak Point</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Amazing Places -->
+    <section class="products">
+        <div class="section-title">
+            <h2>Most-Dos Amazing Places</h2>
+            <p>Experiences we think you'll love</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- CARD TEMPLATE -->
+            <div class="card">
+                <img src="./images/streetfood.img">
+                <h3>Street Food</h3>
+                <p>Sowcarpet Street Food Walking Tour in Chennai with guide</p>
+                <p class="ratings">⭐⭐⭐⭐ 4.9</p>
+                <p class="price">₹2999 <del>₹3999</del></p>
+            </div>
+
+            <div class="card">
+                <img src="./images/mahabalipuram.img">
+                <h3>Mahabalipuram</h3>
+                <p>Mahabalipuram tour by Tourism Ministry approved company</p>
+                <p class="ratings">⭐⭐⭐⭐ 4.8</p>
+                <p class="price">₹4599 <del>₹5999</del></p>
+            </div>
+
+            <div class="card">
+                <img src="./images/chennai.img">
+                <h3>Chennai City</h3>
+                <p>British Architecture Walk, an immersive walking tour in Chennai</p>
+                <p class="ratings">⭐⭐⭐⭐ 4.9</p>
+                <p class="price">₹3999 <del>₹4999</del></p>
+            </div>
+
+            <div class="card">
+                <img src="./images/chicago.img">
+                <h3>Chicago</h3>
+                <p>Chicago-Style Holiday Hike: Festive Food and Walking Tour</p>
+                <p class="ratings">⭐⭐⭐⭐ 4.9</p>
+                <p class="price">₹8799 <del>₹9999</del></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Second Recommendations -->
+    <section class="products">
+        <div class="section-title">
+            <h2>You Might Like These</h2>
+            <p>More things to do in Bengaluru</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="card">
+                <img src="./images/newyork.img">
+                <h3>New York City</h3>
+                <p>Dyker Heights Brooklyn Christmas Lights Tour</p>
+                <p class="ratings">⭐⭐⭐ 3.9</p>
+                <p class="price">₹1999 <del>₹2999</del></p>
+            </div>
+
+            <div class="card">
+                <img src="./images/lasvegas.img">
+                <h3>Las vegas</h3>
+                <p>Whatever you can dream up, Las Vegas delivers</p>
+                <p class="ratings">⭐⭐⭐⭐ 4.9</p>
+                <p class="price">₹5499 <del>₹3999</del></p>
+            </div>
+
+            <div class="card">
+                <img src="./images/god.img">
+                <h3>Singapore</h3>
+                <p> Coincidence is God's way of remaining anonymous</p>
+                <p class="ratings">⭐⭐⭐⭐⭐5.0</p>
+                <p class="price">₹8999 <del>₹9999</del></p>
+            </div>
+
+            <div class="card">
+                <img src="./images/dansih.img">
+                <h3>France</h3>
+                <p>Relax and get cosy the Danish way</p>
+                <p class="ratings">⭐⭐⭐⭐ 4.7</p>
+                <p class="price">₹8899 <del>₹9999</del></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer class="footer">
+        <div class="footer-columns">
+
+            <div class="column">
+                <h3>About Tripadvisor</h3>
+                <a href="#">About Us</a>
+                <a href="#">Press</a>
+                <a href="#">Careers</a>
+                <a href="#">Policies</a>
+                <a href="#">Trust & Safety</a>
+            </div>
+
+            <div class="column">
+                <h3>Explore</h3>
+                <a href="#">Write a Review</a>
+                <a href="#">Add a Place</a>
+                <a href="#">Join</a>
+                <a href="#">Travellers’ Choice</a>
+                <a href="#">Help Centre</a>
+            </div>
+
+            <div class="column">
+                <h3>Business</h3>
+                <a href="#">Owners</a>
+                <a href="#">Sponsored Ads</a>
+                <a href="#">API Access</a>
+                <h3 style="margin-top:15px;">Get The App</h3>
+                <a href="#">iPhone App</a>
+                <a href="#">Android App</a>
+            </div>
+
+            <div class="column">
+                <h3>Tripadvisor Sites</h3>
+                <p>Book tours and attractions on <a href="#">Viator</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="./images/logoimg.svg">
+                <p>© 2025 Tripadvisor LLC. All rights reserved.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Terms of Use</a>
+                <a href="#">Cookies</a>
+                <a href="#">Site Map</a>
+                <a href="#">Contact</a>
+                <a href="#">Accessibility</a>
+            </div>
+
+            <div class="selectors">
+                <select>
+                    <option>₹ INR</option>
+                </select>
+
+                <select>
+                    <option>India</option>
+                    <option>Maldives</option>
+                    <option>China</option>
+                    <option>USA</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
